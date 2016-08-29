@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.thiago.service.EntryLocalService" class="com.thiago.service.impl.EntryLocalServiceImpl" />
+	<bean id="com.thiago.service.EntryService" class="com.thiago.service.impl.EntryServiceImpl" />
+	<bean id="com.thiago.service.persistence.EntryPersistence" class="com.thiago.service.persistence.EntryPersistenceImpl" parent="basePersistence" />
+	<bean id="com.thiago.service.GuestbookLocalService" class="com.thiago.service.impl.GuestbookLocalServiceImpl" />
+	<bean id="com.thiago.service.persistence.GuestbookPersistence" class="com.thiago.service.persistence.GuestbookPersistenceImpl" parent="basePersistence" />
+</beans>
